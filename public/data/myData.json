@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "customerId": "101",
+    "name": "Abhishek",
+    "email": "abhi@test.com",
+    "transactionId": "1001",
+    "monthlySpending":{
+      "2025-05":120,
+      "2025-04":200,
+      "2025-03": 150
+    },
+    "date": "2025-05-01",
+    "gender": "male"
+  },
+  {
+    "id": 2,
+    "customerId": "102",
+    "name": "Kunal",
+    "email": "kunal@test.com",
+    "transactionId": "1002",
+    "monthlySpending":{
+      "2025-05":270,
+      "2025-04":107,
+      "2025-03": 34
+    },
+    "date": "2025-05-02",
+    "gender": "male"
+  },
+  {
+    "id": 3,
+    "customerId": "103",
+    "name": "Prity",
+    "email": "pt@test.com",
+    "transactionId": "1003",
+    "monthlySpending":{
+      "2025-05":176,
+      "2025-04":150,
+      "2025-03": 234
+    },
+    "date": "2025-04-04",
+    "gender": "female"
+  },
+  {
+    "id": 4,
+    "customerId": "104",
+    "name": "Rahul",
+    "email": "rahul@test.com",
+    "transactionId": "1004",
+    "monthlySpending":{
+      "2025-05":210,
+      "2025-04":344,
+      "2025-03": 134
+    },
+    "date": "2025-04-03",
+    "gender": "male"
+  },
+  {
+    "id": 5,
+    "customerId": "105",
+    "name": "Alice",
+    "email": "alice@test.com",
+    "transactionId": "1005",
+    "monthlySpending":{
+      "2025-05":101,
+      "2025-04":102,
+      "2025-03":103
+    },
+    "date": "2025-04-03",
+    "gender": "female"
+  },
+  {
+    "id": 6,
+    "customerId": "106",
+    "name": "Sumit",
+    "email": "sumit@test.com",
+    "transactionId": "1006",
+    "monthlySpending":{
+      "2025-05":400,
+      "2025-04":500,
+      "2025-03":600
+    },
+    "date": "2025-05-03",
+    "gender": "male"
+  },
+  {
+    "id": 7,
+    "customerId": "107",
+    "name": "Shreesh",
+    "email": "shreesh@test.com",
+    "transactionId": "1007",
+    "monthlySpending":{
+      "2025-05":212,
+      "2025-04":313,
+      "2025-03":414
+    },
+    "date": "2025-04-17",
+    "gender": "male"
+  },
+  {
+    "id": 8,
+    "customerId": "108",
+    "name": "Surbhi",
+    "email": "surbhi@test.com",
+    "transactionId": "1008",
+    "monthlySpending":{
+      "2025-05":212,
+      "2025-04":313,
+      "2025-03":414
+    },
+    "date": "2025-04-17",
+    "gender": "female"
+  },
+  {
+    "id": 9,
+    "customerId": "109",
+    "name": "Krishna",
+    "email": "krishna@test.com",
+    "transactionId": "1009",
+    "monthlySpending":{
+      "2025-05":212,
+      "2025-04":313,
+      "2025-03":414
+    },
+    "date": "2025-04-17",
+    "gender": "male"
+  },
+  {
+    "id": 10,
+    "customerId": "110",
+    "name": "Rakesh",
+    "email": "rakesh@test.com",
+    "transactionId": "1010",
+    "monthlySpending":{
+      "2025-05":202,
+      "2025-04":303,
+      "2025-03":404
+    },
+    "date": "2025-04-17",
+    "gender": "male"
+  },
+  {
+    "id": 11,
+    "customerId": "111",
+    "name": "Chetan",
+    "email": "chetan@test.com",
+    "transactionId": "1011",
+    "monthlySpending":{
+      "2025-05":111,
+      "2025-04":211,
+      "2025-03":311
+    },
+    "date": "2025-04-17",
+    "gender": "male"
+  },
+  {
+    "id": 12,
+    "customerId": "112",
+    "name": "Neha",
+    "email": "neha@test.com",
+    "transactionId": "1012",
+    "monthlySpending":{
+      "2025-05":202,
+      "2025-04":303,
+      "2025-03":404
+    },
+    "date": "2025-04-17",
+    "gender": "female"
+  }
+]
