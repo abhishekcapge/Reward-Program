@@ -4,6 +4,11 @@ import "../global.css";
 import Pagination from "./pagination";
 import { fetchData } from "../services/userServices";
 import { Link } from "react-router-dom";
+import log from '../utils/logger';
+
+log.info('This is an info message');
+// log.error('This is an error message');
+
 
 function Users() {
   const [data, setData] = useState([]);
@@ -16,6 +21,7 @@ function Users() {
 
   useEffect(() => {
     fetchData().then((data) => setData(data));
+    log.info('State updated:', data);
     setLoading(false);
   }, []);
 
@@ -55,6 +61,7 @@ function Users() {
         {uniqueCustomers.slice(start, end).map((u) => (
           <Link to={"/users/" + u.customerId} key={u.id}>
             <UserCard
+              key={u.id}
               name={u.name}
               customerId={u.customerId}
               gender={u.gender}
@@ -65,6 +72,7 @@ function Users() {
       </div>
       <div className="pagination-container">
         <Pagination
+          key={noOfPage}
           noOfPage={noOfPage}
           pageSize={PAGE_SIZE}
           totalUser={totalUser}

@@ -5,10 +5,10 @@ import { months } from "../constants/common";
 import { years } from "../constants/common";
 import { RewardPoint } from "../utils/RewardPointCalc";
 import { formatMonth, formatYear } from "../utils/DateFormatter";
+import { getLastThreeMonths } from "../utils/UserDetailsHelper"
 
 function UserDetails() {
   const { customerId } = useParams();
-
   const [userDetails, setUserDetails] = useState([]);
   const [loading, setLoading] = useState(true);
   const [chooseMonth, setChooseMonth] = useState("00");
@@ -79,16 +79,6 @@ function UserDetails() {
     ])
   );
 
-  const filteredDetailByMonth = allKeys.filter((month) => {
-    const resultMonth = formatMonth(month);
-    return resultMonth === chooseMonth;
-  });
-
-  const filterByYear = allKeys.filter((year) => {
-    const resultYear = formatYear(year);
-    return resultYear === choseYear;
-  });
-
   const filterByMonthAndYear = allKeys.filter((my) => {
     const result =
       my.split("-")[1] === chooseMonth && my.split("-")[0] === choseYear;
@@ -97,20 +87,9 @@ function UserDetails() {
 
   const filterByMonthAndYearResult = Array.from([filterByMonthAndYear]);
 
-  const getLastThreeMonths = () => {
-    const date = new Date();
-    date.setMonth(date.getMonth() - 3);
-    return date;
-  };
-
   const recentTransaction = allKeys.filter((txn) => {
     const txnDate = new Date(txn);
     return txnDate >= getLastThreeMonths();
-  });
-
-  const Latest = recentTransaction.filter((month) => {
-    const resultMonth = formatMonth(month);
-    return resultMonth === chooseMonth;
   });
 
   let totalRewardPoint = 0;

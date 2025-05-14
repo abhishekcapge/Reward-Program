@@ -230,6 +230,16 @@
     "gender": "male"
   },
   {
+    "id": 123,
+    "customerId": "1001",
+    "name": "Abhishek",
+    "email": "abhi@test.com",
+    "transactionId": "1115",
+    "spent" : 326,
+    "date": "2025-01-01",
+    "gender": "male"
+  },
+  {
     "id": 1111,
     "customerId": "1005",
     "name": "Sonali",
