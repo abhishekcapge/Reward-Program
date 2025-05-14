@@ -28,6 +28,9 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 ### Project Output
-![image](https://github.com/user-attachments/assets/fd9a7361-b7fd-411b-b428-d29e5dcf3821)
+![image](https://github.com/user-attachments/assets/d618034b-43ad-434d-be89-37399bb422df)
+
 
 ### Select Option 
+![image](https://github.com/user-attachments/assets/414a8b90-0b59-4ac8-9915-61c830e94462)
+
