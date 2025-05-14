@@ -19,15 +19,15 @@ function Users() {
     setCurrentPage(page);
   };
 
-  useEffect(() => {
-    fetchData().then((data) => setData(data));
-    log.info('State updated:', data);
-    setLoading(false);
-  }, []);
-
   if (loading) {
     return <p>Loading...</p>;
   }
+  
+  useEffect(() => {
+    fetchData().then((data) => setData(data));
+    // log.info('State updated:', data);
+    setLoading(false);
+  }, []);
 
   const customerMap = new Map();
 
