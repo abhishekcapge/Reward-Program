@@ -1,38 +1,78 @@
 import React, { useState, useEffect } from "react";
-import UserCard from "./UserCard";
-import "../global.css"
-import Pagination from "./Pagination";
+import UserCard from "./userCard";
+import "../global.css";
+import Pagination from "./pagination";
 import { fetchData } from "../services/userServices";
+import { Link } from "react-router-dom";
 
 function Users() {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(0);
 
-  const PAGE_SIZE = 5;
-  const totalUser = data.length;
-  const noOfPage = Math.ceil(totalUser/PAGE_SIZE);
-  const start = currentPage*PAGE_SIZE;
-  const end = start + PAGE_SIZE;
-
-  const handleCurrentPage=(page)=>{
-        setCurrentPage(page);
-  }
+  const handleCurrentPage = (page) => {
+    setCurrentPage(page);
+  };
 
   useEffect(() => {
-    fetchData().then(data => (setData(data)))
+    fetchData().then((data) => setData(data));
+    setLoading(false);
   }, []);
 
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+
+  const customerMap = new Map();
+
+  data.forEach(({ customerId, name, date, spent, gender }) => {
+    if (!customerMap.has(customerId)) {
+      customerMap.set(customerId, {
+        customerId,
+        name,
+        monthlySpends: { [date]: spent },
+        totalSpend: spent,
+        gender,
+      });
+    } else {
+      const existing = customerMap.get(customerId);
+      existing.monthlySpends[date] = spent;
+      existing.totalSpend += spent;
+    }
+  });
+
+  const uniqueCustomers = Array.from(customerMap.values());
+
+  const PAGE_SIZE = 5;
+  const totalUser = uniqueCustomers.length;
+  const noOfPage = Math.ceil(totalUser / PAGE_SIZE);
+  const start = currentPage * PAGE_SIZE;
+  const end = start + PAGE_SIZE;
+
   return (
-    <div>
+    <>
       <div className="user-container">
-        {data.slice(start,end).map((u) => (
-          <UserCard key={u.id} name={u.name} date={u.date} monthlySpending={u.monthlySpending} gender={u.gender}/>
+        {uniqueCustomers.slice(start, end).map((u) => (
+          <Link to={"/users/" + u.customerId} key={u.id}>
+            <UserCard
+              name={u.name}
+              customerId={u.customerId}
+              gender={u.gender}
+              monthlySpends={u.monthlySpends}
+            />
+          </Link>
         ))}
       </div>
       <div className="pagination-container">
-        <Pagination noOfPage={noOfPage} pageSize={PAGE_SIZE} totalUser={totalUser} handleCurrentPage={handleCurrentPage} currentPage={currentPage}/>
+        <Pagination
+          noOfPage={noOfPage}
+          pageSize={PAGE_SIZE}
+          totalUser={totalUser}
+          handleCurrentPage={handleCurrentPage}
+          currentPage={currentPage}
+        />
       </div>
-    </div>
+    </>
   );
 }
 

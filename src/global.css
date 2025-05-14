@@ -4,16 +4,16 @@
 }
 
 .card{
-    width: 280px;
-    height: 320px;
+    width: 220px;
+    height: 250px;
     border: 1px solid black;
     padding: 2px;
     margin: 5px;
 }
 
 .avatar{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 130px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 5px;
@@ -33,4 +33,10 @@
 
 .active{
     background-color: green;
+}
+
+.user-details{
+    width: 900px;
+    height: 400px;
+    background-color: lightblue;
 }

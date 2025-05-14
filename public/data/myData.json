@@ -1,170 +1,253 @@
 [
   {
-    "id": 1,
-    "customerId": "101",
+    "id": 100,
+    "customerId": "1001",
     "name": "Abhishek",
     "email": "abhi@test.com",
-    "transactionId": "1001",
-    "monthlySpending":{
-      "2025-05":120,
-      "2025-04":200,
-      "2025-03": 150
-    },
+    "transactionId": "1111",
+    "spent" : 120,
     "date": "2025-05-01",
     "gender": "male"
   },
   {
-    "id": 2,
-    "customerId": "102",
+    "id": 101,
+    "customerId": "1001",
+    "name": "Abhishek",
+    "email": "abhi@test.com",
+    "transactionId": "1112",
+    "spent": 78,
+    "date": "2025-04-04",
+    "gender": "male"
+  },
+  {
+    "id": 102,
+    "customerId": "1001",
+    "name": "Abhishek",
+    "email": "abhi@test.com",
+    "transactionId": "1113",
+    "spent": 143,
+    "date": "2025-03-05",
+    "gender": "male"
+  },
+  {
+    "id": 103,
+    "customerId": "1002",
     "name": "Kunal",
     "email": "kunal@test.com",
-    "transactionId": "1002",
-    "monthlySpending":{
-      "2025-05":270,
-      "2025-04":107,
-      "2025-03": 34
-    },
+    "transactionId": "1121",
+    "spent": 49,
+    "date": "2025-05-05",
+    "gender": "male"
+  },
+  {
+    "id": 104,
+    "customerId": "1002",
+    "name": "Kunal",
+    "email": "kunal@test.com",
+    "transactionId": "1122",
+    "spent": 120,
+    "date": "2025-04-05",
+    "gender": "male"
+  },
+  {
+    "id": 105,
+    "customerId": "1002",
+    "name": "Kunal",
+    "email": "kunal@test.com",
+    "transactionId": "1123",
+    "spent": 150,
+    "date": "2025-04-17",
+    "gender": "male"
+  },
+  {
+    "id": 106,
+    "customerId": "1002",
+    "name": "Kunal",
+    "email": "kunal@test.com",
+    "transactionId": "1124",
+    "spent": 180,
+    "date": "2025-03-10",
+    "gender": "male"
+  },
+  {
+    "id": 107,
+    "customerId": "1002",
+    "name": "Kunal",
+    "email": "kunal@test.com",
+    "transactionId": "1125",
+    "spent": 180,
+    "date": "2025-03-10",
+    "gender": "male"
+  },
+  {
+    "id": 108,
+    "customerId": "1002",
+    "name": "Kunal",
+    "email": "kunal@test.com",
+    "transactionId": "1126",
+    "spent": 300,
+    "date": "2025-01-05",
+    "gender": "male"
+  },
+  {
+    "id": 109,
+    "customerId": "1001",
+    "name": "Abhishek",
+    "email": "abhi@test.com",
+    "transactionId": "1114",
+    "spent": 232,
+    "date": "2025-02-11",
+    "gender": "male"
+  },
+  {
+    "id": 110,
+    "customerId": "1002",
+    "name": "Kunal",
+    "email": "kunal@test.com",
+    "transactionId": "1127",
+    "spent": 500,
+    "date": "2025-02-05",
+    "gender": "male"
+  },
+  {
+    "id": 111,
+    "customerId": "1002",
+    "name": "Kunal",
+    "email": "kunal@test.com",
+    "transactionId": "1128",
+    "spent": 222,
+    "date": "2024-01-01",
+    "gender": "male"
+  },
+  {
+    "id": 112,
+    "customerId": "1003",
+    "name": "Prity",
+    "email": "prity@test.com",
+    "transactionId": "1130",
+    "spent": 192,
+    "date": "2024-01-01",
+    "gender": "female"
+  },
+  {
+    "id": 113,
+    "customerId": "1003",
+    "name": "Prity",
+    "email": "prity@test.com",
+    "transactionId": "1131",
+    "spent": 242,
+    "date": "2025-01-01",
+    "gender": "female"
+  },
+  {
+    "id": 114,
+    "customerId": "1003",
+    "name": "Prity",
+    "email": "prity@test.com",
+    "transactionId": "1132",
+    "spent": 98,
+    "date": "2025-01-21",
+    "gender": "female"
+  },
+  {
+    "id": 115,
+    "customerId": "1003",
+    "name": "Prity",
+    "email": "prity@test.com",
+    "transactionId": "1133",
+    "spent": 98,
+    "date": "2025-02-15",
+    "gender": "female"
+  },
+  {
+    "id": 116,
+    "customerId": "1003",
+    "name": "Prity",
+    "email": "prity@test.com",
+    "transactionId": "1134",
+    "spent": 112,
+    "date": "2025-03-25",
+    "gender": "female"
+  },
+  {
+    "id": 117,
+    "customerId": "1003",
+    "name": "Prity",
+    "email": "prity@test.com",
+    "transactionId": "1135",
+    "spent": 216,
+    "date": "2025-04-22",
+    "gender": "female"
+  },
+  {
+    "id": 118,
+    "customerId": "1003",
+    "name": "Prity",
+    "email": "prity@test.com",
+    "transactionId": "1136",
+    "spent": 118,
+    "date": "2025-05-13",
+    "gender": "female"
+  },
+  {
+    "id": 119,
+    "customerId": "1003",
+    "name": "Prity",
+    "email": "prity@test.com",
+    "transactionId": "1138",
+    "spent": 301,
+    "date": "2025-01-23",
+    "gender": "female"
+  },
+  {
+    "id": 120,
+    "customerId": "1004",
+    "name": "Shreesh",
+    "email": "shreesh@test.com",
+    "transactionId": "1140",
+    "spent": 72,
     "date": "2025-05-02",
     "gender": "male"
   },
   {
-    "id": 3,
-    "customerId": "103",
-    "name": "Prity",
-    "email": "pt@test.com",
-    "transactionId": "1003",
-    "monthlySpending":{
-      "2025-05":176,
-      "2025-04":150,
-      "2025-03": 234
-    },
-    "date": "2025-04-04",
-    "gender": "female"
-  },
-  {
-    "id": 4,
-    "customerId": "104",
-    "name": "Rahul",
-    "email": "rahul@test.com",
-    "transactionId": "1004",
-    "monthlySpending":{
-      "2025-05":210,
-      "2025-04":344,
-      "2025-03": 134
-    },
-    "date": "2025-04-03",
-    "gender": "male"
-  },
-  {
-    "id": 5,
-    "customerId": "105",
-    "name": "Alice",
-    "email": "alice@test.com",
-    "transactionId": "1005",
-    "monthlySpending":{
-      "2025-05":101,
-      "2025-04":102,
-      "2025-03":103
-    },
-    "date": "2025-04-03",
-    "gender": "female"
-  },
-  {
-    "id": 6,
-    "customerId": "106",
-    "name": "Sumit",
-    "email": "sumit@test.com",
-    "transactionId": "1006",
-    "monthlySpending":{
-      "2025-05":400,
-      "2025-04":500,
-      "2025-03":600
-    },
-    "date": "2025-05-03",
-    "gender": "male"
-  },
-  {
-    "id": 7,
-    "customerId": "107",
+    "id": 121,
+    "customerId": "1004",
     "name": "Shreesh",
     "email": "shreesh@test.com",
-    "transactionId": "1007",
-    "monthlySpending":{
-      "2025-05":212,
-      "2025-04":313,
-      "2025-03":414
-    },
-    "date": "2025-04-17",
+    "transactionId": "1141",
+    "spent": 172,
+    "date": "2025-04-12",
     "gender": "male"
   },
   {
-    "id": 8,
-    "customerId": "108",
-    "name": "Surbhi",
-    "email": "surbhi@test.com",
-    "transactionId": "1008",
-    "monthlySpending":{
-      "2025-05":212,
-      "2025-04":313,
-      "2025-03":414
-    },
-    "date": "2025-04-17",
+    "id": 122,
+    "customerId": "1004",
+    "name": "Shreesh",
+    "email": "shreesh@test.com",
+    "transactionId": "1142",
+    "spent": 271,
+    "date": "2025-03-18",
+    "gender": "male"
+  },
+  {
+    "id": 1111,
+    "customerId": "1005",
+    "name": "Sonali",
+    "email": "sonali@test.com",
+    "transactionId": "2000",
+    "spent": 111,
+    "date": "2025-04-14",
     "gender": "female"
   },
   {
-    "id": 9,
-    "customerId": "109",
-    "name": "Krishna",
-    "email": "krishna@test.com",
-    "transactionId": "1009",
-    "monthlySpending":{
-      "2025-05":212,
-      "2025-04":313,
-      "2025-03":414
-    },
-    "date": "2025-04-17",
-    "gender": "male"
-  },
-  {
-    "id": 10,
-    "customerId": "110",
+    "id": 2222,
+    "customerId": "1006",
     "name": "Rakesh",
     "email": "rakesh@test.com",
-    "transactionId": "1010",
-    "monthlySpending":{
-      "2025-05":202,
-      "2025-04":303,
-      "2025-03":404
-    },
-    "date": "2025-04-17",
+    "transactionId": "2001",
+    "spent": 200,
+    "date": "2025-05-05",
     "gender": "male"
-  },
-  {
-    "id": 11,
-    "customerId": "111",
-    "name": "Chetan",
-    "email": "chetan@test.com",
-    "transactionId": "1011",
-    "monthlySpending":{
-      "2025-05":111,
-      "2025-04":211,
-      "2025-03":311
-    },
-    "date": "2025-04-17",
-    "gender": "male"
-  },
-  {
-    "id": 12,
-    "customerId": "112",
-    "name": "Neha",
-    "email": "neha@test.com",
-    "transactionId": "1012",
-    "monthlySpending":{
-      "2025-05":202,
-      "2025-04":303,
-      "2025-03":404
-    },
-    "date": "2025-04-17",
-    "gender": "female"
   }
+
 ]

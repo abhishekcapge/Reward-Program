@@ -2,4 +2,13 @@
   text-align: center;
   background-color: beige;
 }
+.reward-table{
+  width: 70%;
+  /* margin: auto; */
+}
 
+.reward-table th,
+.reward-table td {
+  border: 1px solid black;
+  text-align: center;
+}
