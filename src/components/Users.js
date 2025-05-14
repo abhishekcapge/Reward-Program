@@ -18,16 +18,16 @@ function Users() {
   const handleCurrentPage = (page) => {
     setCurrentPage(page);
   };
-
-  if (loading) {
-    return <p>Loading...</p>;
-  }
   
   useEffect(() => {
     fetchData().then((data) => setData(data));
     // log.info('State updated:', data);
     setLoading(false);
   }, []);
+
+  if (loading) {
+    return <p>Loading...</p>;
+  }
 
   const customerMap = new Map();
 
